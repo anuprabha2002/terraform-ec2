@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  web:
+    image: nginx
+    ports:
+      - "8081:80"
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: anu
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: mydb
